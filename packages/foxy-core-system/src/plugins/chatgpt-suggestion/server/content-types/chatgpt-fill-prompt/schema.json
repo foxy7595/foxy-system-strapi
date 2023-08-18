@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chatgpt-fill-prompts",
+  "info": {
+    "singularName": "chatgpt-fill-prompt",
+    "pluralName": "chatgpt-fill-prompts",
+    "displayName": "ChatGPT fill prompt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "prompt": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 2048
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::chatgpt-suggestion.chatgpt-fill-type"
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

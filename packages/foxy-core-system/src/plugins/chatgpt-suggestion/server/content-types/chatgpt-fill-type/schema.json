@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chatgpt-fill-types",
+  "info": {
+    "singularName": "chatgpt-fill-type",
+    "pluralName": "chatgpt-fill-types",
+    "displayName": "ChatGPT fill type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    },
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "order": {
+      "type": "integer"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "prompt": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
