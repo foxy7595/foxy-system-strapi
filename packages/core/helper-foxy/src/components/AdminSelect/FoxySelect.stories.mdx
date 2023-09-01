@@ -1,0 +1,57 @@
+{/* - FoxySelect.stories.mdx - */}
+
+import { Meta, ArgsTable, Canvas, Story } from '@storybook/addon-docs';
+import { FoxySelect } from '.';
+import { DesignSystemProvider, Main } from '@strapi/design-system';
+
+<Meta title="foxy-admin/FoxySelect" />
+
+# FoxySelect
+
+This component is used to select function.
+
+## Usage
+
+<Canvas>
+  <Story name="base">
+    <Main>
+      <DesignSystemProvider locale="en">
+        <div style={{ position: 'relative', padding: 10, height: 500 }}>
+          <FoxySelect
+            options={[
+              { value: 'option1', label: 'Option 1' },
+              { value: 'option2', label: 'Option 2' },
+              { value: 'option3', label: 'Option 3' },
+            ]}
+          />
+        </div>
+      </DesignSystemProvider>
+    </Main>
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable of={FoxySelect} />
+
+## Code Example
+
+```jsx
+import React from 'react';
+import { FoxySelect } from './FoxySelect';
+import { DesignSystemProvider } from '@strapi/design-system';
+
+const Example = () => (
+  <DesignSystemProvider locale="en">
+    <FoxySelect
+      options={[
+        { value: 'option1', label: 'Option 1' },
+        { value: 'option2', label: 'Option 2' },
+        { value: 'option3', label: 'Option 3' },
+      ]}
+    />
+  </DesignSystemProvider>
+);
+
+export default Example;
+```

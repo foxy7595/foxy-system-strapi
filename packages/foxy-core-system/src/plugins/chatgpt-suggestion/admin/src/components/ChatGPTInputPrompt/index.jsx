@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
-import { auth, ReactSelect } from "@strapi/helper-plugin";
-import styled from "styled-components";
+import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
+import { auth, ReactSelect } from '@strapi/helper-plugin';
+import styled from 'styled-components';
+
+import { FoxySelect } from '@strapi/helper-foxy';
 import {
   Button,
   TextInput,
@@ -12,8 +14,8 @@ import {
   Grid,
   GridItem,
   Divider,
-} from "@strapi/design-system";
-import LoadingOverlay from "../Loading";
+} from '@strapi/design-system';
+import LoadingOverlay from '../Loading';
 
 const ChatGPTInputPrompt = ({ open, onClose }) => {
   const [loading, setLoading] = useState(false);
@@ -25,6 +27,7 @@ const ChatGPTInputPrompt = ({ open, onClose }) => {
           <LoadingOverlay isLoading={loading} />
 
           <ReactSelect />
+          <FoxySelect />
         </CardContent>
       </CardBodyStyled>
     </CardStyled>

@@ -3,8 +3,8 @@ module.exports = ({ env }) => ({
     enabled: true,
   },
 
-  // "chatgpt-suggestion": {
-  //   enabled: true,
-  //   resolve: "./src/plugins/chatgpt-suggestion",
-  // },
+  "chatgpt-suggestion": {
+    enabled: true,
+    resolve: "./src/plugins/chatgpt-suggestion",
+  },
 });

@@ -56,6 +56,8 @@ const primaryProcess = async ({ distDir, appDir, build, isTSProject, watchAdmin,
 
   const buildExists = fs.existsSync(path.join(distDir, 'build'));
 
+
+
   // Don't run the build process if the admin is in watch mode
   if (build && !watchAdmin && serveAdminPanel && !buildExists) {
     try {
@@ -69,6 +71,9 @@ const primaryProcess = async ({ distDir, appDir, build, isTSProject, watchAdmin,
       process.exit(1);
     }
   }
+  execa('npx', ['next', 'dev','--port',process.env.CLIENT_PORT], {
+    stdio: 'inherit',
+  });
 
   if (watchAdmin) {
     try {

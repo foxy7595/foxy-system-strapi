@@ -1,0 +1,46 @@
+{/* - FoxyButton.stories.mdx - */}
+
+import { Meta, ArgsTable, Canvas, Story } from '@storybook/addon-docs';
+import { FoxyButton } from '.';
+import { Main } from '@strapi/design-system';
+import { FoxyProvider } from '../ThemeProvider/FoxyProvider';
+
+<Meta title="foxy-client/FoxyButton" />
+
+# FoxyButton
+
+This component is used to select function.
+
+## Usage
+
+<Canvas>
+  <Story name="base">
+    <Main>
+      <FoxyProvider locale="en">
+        <div style={{ position: 'relative', padding: 10, height: 500 }}>
+          <FoxyButton>test</FoxyButton>
+        </div>
+      </FoxyProvider>
+    </Main>
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable of={FoxyButton} />
+
+## Code Example
+
+```jsx
+import React from 'react';
+import { FoxySelect } from './FoxySelect';
+import { DesignSystemProvider } from '@strapi/design-system';
+
+const Example = () => (
+  <DesignSystemProvider locale="en">
+    <FoxyButton>test</FoxyButton>
+  </DesignSystemProvider>
+);
+
+export default Example;
+```

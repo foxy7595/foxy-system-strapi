@@ -11,6 +11,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/helper-foxy": "workspace:^",
     "@strapi/plugin-graphql": "workspace:^",
     "@strapi/plugin-i18n": "workspace:^",
     "@strapi/plugin-seo": "^1.9.2",
