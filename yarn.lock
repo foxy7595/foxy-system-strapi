@@ -6130,14 +6130,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:7.2.2":
-  version: 7.2.2
-  resolution: "@storybook/addon-mdx-gfm@npm:7.2.2"
+"@storybook/addon-mdx-gfm@npm:7.4.5":
+  version: 7.4.5
+  resolution: "@storybook/addon-mdx-gfm@npm:7.4.5"
   dependencies:
-    "@storybook/node-logger": 7.2.2
+    "@storybook/node-logger": 7.4.5
     remark-gfm: ^3.0.1
     ts-dedent: ^2.0.0
-  checksum: b12662d712726db09faa2e17efce58cde95d35f66e7afe826fb8115d6a2d45636a5d49166ab7ca351ad556de21a366e951f4f7bbb5e863fb5f53e0c4c553c4d3
+  checksum: 77cbc8019176dd534667f9afa87c38e68bead98bd9889248d14a543013ff548d04191fdafd541ceb296c8e6ac53f1e30627da7f48a47cb72efdbe342be0e3ab0
   languageName: node
   linkType: hard
 
@@ -6676,6 +6676,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/node-logger@npm:7.4.5":
+  version: 7.4.5
+  resolution: "@storybook/node-logger@npm:7.4.5"
+  checksum: f492408ae489e145e37bf6b03a49c592eeab1c47fc0b63cc0b7787ea7de330874254af468048acbc8ff3fa287aa8584b4f97b985612d48607a7b07b9f7eba225
+  languageName: node
+  linkType: hard
+
 "@storybook/postinstall@npm:7.2.2":
   version: 7.2.2
   resolution: "@storybook/postinstall@npm:7.2.2"
@@ -7103,7 +7110,7 @@ __metadata:
     "@storybook/addon-actions": 7.2.2
     "@storybook/addon-essentials": 7.2.2
     "@storybook/addon-links": 7.2.2
-    "@storybook/addon-mdx-gfm": 7.2.2
+    "@storybook/addon-mdx-gfm": 7.4.5
     "@storybook/builder-vite": 7.2.2
     "@storybook/react-vite": 7.2.2
     "@strapi/design-system": 1.9.0
